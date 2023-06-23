@@ -66,7 +66,7 @@ if (!isLoaded) {
 <img className="img_crd" src={e.image} alt="image product" />
 <div className="descr">
     <h4>{e.price}</h4>
-    <a style={{fontSize: "12pt"}} href={`/prod/${e.id}`}>{e.name_product}</a>
+    <a style={{fontSize: "12pt"}} href={`/gamesdan-front/prod/${e.id}`}>{e.name_product}</a>
 
 </div>
 </div>

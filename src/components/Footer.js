@@ -10,8 +10,8 @@ export default function Footer() {
                     <h2>2023 Daniel Pisarenko</h2>
                 </div>
                 <div className="nav">
-                    <Link to="/ctl">GitHub</Link> 
-                    <Link to="/adm"> Dan</Link> 
+                    <Link to="/gamesdan-front/ctl">GitHub</Link> 
+                    <Link to="/gamesdan-front/adm"> Dan</Link> 
                 </div>
             </footer>
         

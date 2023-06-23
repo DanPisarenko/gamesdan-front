@@ -52,7 +52,7 @@ export default function Complete(){
                 </div>)
             })}
             <div style={{marginTop: "32px"}}>
-            <Link to='/' style={{fontSize: "12pt"}}>Вернуться на главную страницу</Link>
+            <Link to='/gamesdan-front/' style={{fontSize: "12pt"}}>Вернуться на главную страницу</Link>
             </div>
             </div>
         </div>

@@ -50,7 +50,7 @@ const tk  = Math.floor(Math.random() * (200000 - 100000) + 100000);
             summ: sm,
         }).then(res => {
             console.log(res.data)
-            window.location.href = `/buycomp/${tk}`
+            window.location.href = `/gamesdan-front/buycomp/${tk}`
 
         })
     }

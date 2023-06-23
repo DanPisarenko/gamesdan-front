@@ -46,7 +46,7 @@ const {id} = useParams()
         }
     }, [ id ]);
     function transf(e){
- window.location.href = `/buy/${e}`
+ window.location.href = `/gamesdan-front/buy/${e}`
 
     }
 

@@ -23,7 +23,7 @@ export default function Auth() {
               localStorage.setItem('test1', token);
               localStorage.setItem('adm_name', aemail);
               localStorage.setItem('isAuthAdm', true)
-              window.location.href='/adm/';
+              window.location.href='/gamesdan-front/adm/';
               console.log('reboot is compl')
         }else{
             console.log('fail')
