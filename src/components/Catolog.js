@@ -23,7 +23,7 @@ useEffect(() => {
 }, []);
 function delPos(e) {
   if (window.confirm("Вы хотите удалить инфу о товаре?") == true) {
-  fetch(`http://localhost:8080/api/product/${e}`,{
+  fetch(`https://sympatheticgrowlingservice.danpamag.repl.co/api/product/${e}`,{
       method: 'DELETE'
   }).then((result) => {
       result.json().then((res) =>{

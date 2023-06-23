@@ -22,7 +22,7 @@ const {id} = useParams()
     
     useEffect(() => {
         if ( id ) {
-            axios.get(`http://localhost:8080/api/product/${id}`)
+            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/product/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setProd(res.data.rows)
@@ -35,7 +35,7 @@ const {id} = useParams()
     }, [ id ]);
     useEffect(() => {
         if ( id ) {
-            axios.get(`http://localhost:8080/api/fdbk/${id}`)
+            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/fdbk/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setPost(res.data.rows)
@@ -50,7 +50,7 @@ const {id} = useParams()
 
     }
 
-    const url = 'http://localhost:8080/api/fdbk'
+    const url = 'https://sympatheticgrowlingservice.danpamag.repl.co/api/fdbk'
     function submit(e) {
         e.preventDefault();
         axios.post(url, {

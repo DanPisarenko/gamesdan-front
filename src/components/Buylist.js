@@ -21,7 +21,7 @@ const {id} = useParams()
     
     useEffect(() => {
         if ( id ) {
-            axios.get(`http://localhost:8080/api/product/${id}`)
+            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/product/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setProd(res.data.rows)
@@ -37,7 +37,7 @@ const {id} = useParams()
 
 
 const tk  = Math.floor(Math.random() * (200000 - 100000) + 100000);
-    const url = 'http://localhost:8080/api/list'
+    const url = 'https://sympatheticgrowlingservice.danpamag.repl.co/api/list'
     function submit(e) {
         e.preventDefault();
         axios.post(url, {
@@ -63,7 +63,7 @@ const tk  = Math.floor(Math.random() * (200000 - 100000) + 100000);
         console.log(data)
     }
     function delPos(e) {
-        fetch(`https://sppjfapi.andrieiiuzlov.repl.co/api/positions/${e}`,{
+        fetch(`https://sympatheticgrowlingservice.danpamag.repl.co/api/positions/${e}`,{
             method: 'DELETE'
         }).then((result) => {
             result.json().then((res) =>{

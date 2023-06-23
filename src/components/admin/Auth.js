@@ -8,7 +8,7 @@ export default function Auth() {
       e.preventDefault();
       
         const fetcher = async (lgn, pass) => {
-        const response1 = await fetch("http://localhost:8080/api/user/");
+        const response1 = await fetch("https://sympatheticgrowlingservice.danpamag.repl.co/api/user/");
         const data1 = await response1.json();
         const data2 = data1.rows
         console.log(data2)

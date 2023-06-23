@@ -11,7 +11,7 @@ export default function AdmPage(){
     const [list_buy, setProd] = useState([])
 
     useEffect(() => {
-            axios.get(`http://localhost:8080/api/list/`)
+            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/list/`)
                 .then(res => {
                     console.log(res.data.rows)
                     setProd(res.data.rows)

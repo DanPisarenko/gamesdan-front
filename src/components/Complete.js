@@ -23,7 +23,7 @@ export default function Complete(){
         
         useEffect(() => {
             if ( id ) {
-                axios.get(`http://localhost:8080/api/list/${id}`)
+                axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/list/${id}`)
                     .then(res => {
                         console.log(res.data.rows)
                         setProd(res.data.rows)
