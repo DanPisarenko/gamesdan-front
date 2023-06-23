@@ -1,0 +1,119 @@
+header{
+    padding: 5px 45px 5px 45px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    margin-top: 25px;
+    padding: 5px 45px 5px 45px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #3f3f3f;
+    font-size: 18pt;
+    transition: 0.3s;
+
+}
+a:hover{
+    color: chocolate;
+}
+
+.card_prod{
+    background-color: antiquewhite;
+    margin: 15px;
+    padding: 5px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.img_crd{
+    width: 200px;
+}
+.ff{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tttt{
+    color: azure;
+    padding: 64px;
+    width: 80%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/4e/de/5a/4ede5a33c5490195b2b17466ad26d124.gif');
+}
+
+.Prod-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prod-item{
+    width: 320px;
+    margin: 25px;
+    border: 1px dotted;
+    padding: 40px;
+}
+.cards_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-list-item{
+ border: 1px dotted;
+ border-radius: 15px;
+ padding: 15px;   
+}
+.form-company{
+    display: flex;
+    flex-direction: column;
+
+}
+
+button{
+    width: 320px;
+    border: 1px solid;
+    background-color: honeydew;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+
+    
+}
+button:hover{
+    background-color: darkgrey;
+}
+.buylist{
+    /* width: 500px; */
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.amdns{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
