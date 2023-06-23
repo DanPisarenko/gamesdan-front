@@ -8,7 +8,7 @@ export default function Auth() {
       e.preventDefault();
       
         const fetcher = async (lgn, pass) => {
-        const response1 = await fetch("https://sympatheticgrowlingservice.danpamag.repl.co/api/user/");
+        const response1 = await fetch("http://localhost:8080/api/user/");
         const data1 = await response1.json();
         const data2 = data1.rows
         console.log(data2)
@@ -23,7 +23,7 @@ export default function Auth() {
               localStorage.setItem('test1', token);
               localStorage.setItem('adm_name', aemail);
               localStorage.setItem('isAuthAdm', true)
-              window.location.href='/gamesdan-front/adm/';
+              window.location.href='/adm/';
               console.log('reboot is compl')
         }else{
             console.log('fail')

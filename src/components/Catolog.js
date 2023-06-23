@@ -23,7 +23,7 @@ useEffect(() => {
 }, []);
 function delPos(e) {
   if (window.confirm("Вы хотите удалить инфу о товаре?") == true) {
-  fetch(`https://sympatheticgrowlingservice.danpamag.repl.co/api/product/${e}`,{
+  fetch(`http://localhost:8080/api/product/${e}`,{
       method: 'DELETE'
   }).then((result) => {
       result.json().then((res) =>{
@@ -66,7 +66,7 @@ if (!isLoaded) {
 <img className="img_crd" src={e.image} alt="image product" />
 <div className="descr">
     <h4>{e.price}</h4>
-    <a style={{fontSize: "12pt"}} href={`/gamesdan-front/prod/${e.id}`}>{e.name_product}</a>
+    <a style={{fontSize: "12pt"}} href={`/prod/${e.id}`}>{e.name_product}</a>
 
 </div>
 </div>

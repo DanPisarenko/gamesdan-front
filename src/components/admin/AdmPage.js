@@ -11,7 +11,7 @@ export default function AdmPage(){
     const [list_buy, setProd] = useState([])
 
     useEffect(() => {
-            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/list/`)
+            axios.get(`http://localhost:8080/api/list/`)
                 .then(res => {
                     console.log(res.data.rows)
                     setProd(res.data.rows)
@@ -23,7 +23,7 @@ export default function AdmPage(){
 
 
     if(!admr) {
-        window.location.href = "/gamesdan-front/adm/auth"
+        window.location.href = "/adm/auth"
         return(
             <h2>Вы не авторизовались. Вы будуете перенаправлены на страницу авторизации</h2>
         )
@@ -32,7 +32,7 @@ export default function AdmPage(){
         <div className="amdns">
             <div className="item-amd">
            <h2> Hello {usr}</h2>
-            <Link to="/gamesdan-front/adm/prod-ed">операции с продукциями</Link>
+            <Link to="/adm/prod-ed">операции с продукциями</Link>
             <div className="feedbacks">
 
             </div>
@@ -42,7 +42,7 @@ export default function AdmPage(){
             {list_buy.map((e) => {
                 return(
                     <li className="item-bill">
-                      <Link to={`/gamesdan-front/buycomp/${e.ticket}`}>{e.user_name} {e.name_product}</Link>
+                      <Link to={`/buycomp/${e.ticket}`}>{e.user_name} {e.name_product}</Link>
                         
                     </li>
                 )

@@ -12,7 +12,7 @@ export default function AddDelProd() {
         imgcov:  '',
         genre:  '',
     })
-    const url = 'https://sympatheticgrowlingservice.danpamag.repl.co/api/product'
+    const url = 'http://localhost:8080/api/product'
     function submit(e) {
         e.preventDefault();
         axios.post(url, {

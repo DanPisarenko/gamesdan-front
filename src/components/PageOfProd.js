@@ -22,7 +22,7 @@ const {id} = useParams()
     
     useEffect(() => {
         if ( id ) {
-            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/product/${id}`)
+            axios.get(`http://localhost:8080/api/product/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setProd(res.data.rows)
@@ -35,7 +35,7 @@ const {id} = useParams()
     }, [ id ]);
     useEffect(() => {
         if ( id ) {
-            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/fdbk/${id}`)
+            axios.get(`http://localhost:8080/api/fdbk/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setPost(res.data.rows)
@@ -46,11 +46,11 @@ const {id} = useParams()
         }
     }, [ id ]);
     function transf(e){
- window.location.href = `/gamesdan-front/buy/${e}`
+ window.location.href = `/buy/${e}`
 
     }
 
-    const url = 'https://sympatheticgrowlingservice.danpamag.repl.co/api/fdbk'
+    const url = 'http://localhost:8080/api/fdbk'
     function submit(e) {
         e.preventDefault();
         axios.post(url, {

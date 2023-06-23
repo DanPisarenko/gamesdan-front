@@ -21,7 +21,7 @@ const {id} = useParams()
     
     useEffect(() => {
         if ( id ) {
-            axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/product/${id}`)
+            axios.get(`http://localhost:8080/api/product/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setProd(res.data.rows)
@@ -50,7 +50,7 @@ const tk  = Math.floor(Math.random() * (200000 - 100000) + 100000);
             summ: sm,
         }).then(res => {
             console.log(res.data)
-            window.location.href = `/gamesdan-front/buycomp/${tk}`
+            window.location.href = `/buycomp/${tk}`
 
         })
     }

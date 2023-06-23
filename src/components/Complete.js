@@ -23,7 +23,7 @@ export default function Complete(){
         
         useEffect(() => {
             if ( id ) {
-                axios.get(`https://sympatheticgrowlingservice.danpamag.repl.co/api/list/${id}`)
+                axios.get(`http://localhost:8080/api/list/${id}`)
                     .then(res => {
                         console.log(res.data.rows)
                         setProd(res.data.rows)
@@ -52,7 +52,7 @@ export default function Complete(){
                 </div>)
             })}
             <div style={{marginTop: "32px"}}>
-            <Link to='/gamesdan-front/' style={{fontSize: "12pt"}}>Вернуться на главную страницу</Link>
+            <Link to='/' style={{fontSize: "12pt"}}>Вернуться на главную страницу</Link>
             </div>
             </div>
         </div>

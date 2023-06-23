@@ -10,8 +10,8 @@ export default function Header() {
                     <h2>👾Dan Games Store🎮</h2>
                 </div>
                 <div className="nav">
-                    <Link to="/gamesdan-front/">О нас</Link> 
-                    <Link to="/gamesdan-front/ctl">Каталог</Link> 
+                    <Link to="/">О нас</Link> 
+                    <Link to="/ctl">Каталог</Link> 
                 </div>
             </header>
         
