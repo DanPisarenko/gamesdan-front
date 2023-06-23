@@ -16,14 +16,14 @@ function App() {
       <Header/>
       <main>
       <Routes>
-        <Route path="/gamesdan-front/" element={<Main/>}/>
-        <Route path="/gamesdan-front/ctl" element={<Catolog/>}/>
-        <Route path="/gamesdan-front/prod/:id" element={<PageOfProd/>}/>
-        <Route path="/gamesdan-front/adm/auth" element={<Auth/>}/>
-        <Route path="/gamesdan-front/adm/" element={<AdmPage/>}/>
-        <Route path="/gamesdan-front/adm/prod-ed" element={<AddDelProd/>}/>
-        <Route path="/gamesdan-front/buy/:id" element={<Buylist/>}/>
-        <Route path="/gamesdan-front/buycomp/:id" element={<Complete/>}/>
+        <Route path="/" element={<Main/>}/>
+        <Route path="/ctl" element={<Catolog/>}/>
+        <Route path="/prod/:id" element={<PageOfProd/>}/>
+        <Route path="/adm/auth" element={<Auth/>}/>
+        <Route path="/adm/" element={<AdmPage/>}/>
+        <Route path="/adm/prod-ed" element={<AddDelProd/>}/>
+        <Route path="/buy/:id" element={<Buylist/>}/>
+        <Route path="/buycomp/:id" element={<Complete/>}/>
         
 
       </Routes>
